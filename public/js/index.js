@@ -46,7 +46,8 @@ $(function() {
   });
 
   $('#list').on('click', function(e) {
-    $.ajax(sa + '/games', {
+    debugger;
+    $.ajax(sa + '/users', {
       dataType: 'json',
       method: 'GET',
       headers: {
