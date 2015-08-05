@@ -1,7 +1,7 @@
 class User < ActiveRecord::Base
   has_secure_password
   has_many :games
-  # before_create :set_token
+  before_create :set_token
 
   validates :email, uniqueness: true
 
