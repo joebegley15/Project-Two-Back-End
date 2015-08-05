@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :authenticate, only: [:login, :create]
+  # skip_before_action :authenticate, only: [:login, :create]
  # before_action :set_user, only: [:show, :update, :destroy]
 
 
@@ -57,9 +57,9 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
-    @user.destroy
+    # @user.destroy
 
-    head :no_content
+    # head :no_content
   end
 
 
