@@ -3,6 +3,8 @@ class User < ActiveRecord::Base
   has_many :games
   before_create :set_token
 
+
+
   def wins
     self.games.where("player_score > cpu_score").length
   end
