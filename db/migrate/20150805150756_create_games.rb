@@ -1,10 +1,10 @@
 class CreateGames < ActiveRecord::Migration
   def change
     create_table :games do |t|
-      t.integer :outcome
-      t.string :player_state
-      t.string :computer_state
-      t.string :score
+      t.string :user_dice
+      t.string :cpu_dice
+      t.integer :player_score
+      t.integer :cpu_score
 
       t.timestamps null: false
     end

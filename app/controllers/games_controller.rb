@@ -1,5 +1,4 @@
-#
-class GamesController < ProtectedController
+class GamesController < ApplicationController
   def create
   end
   def update
